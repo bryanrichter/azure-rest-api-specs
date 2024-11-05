@@ -268,6 +268,9 @@ model SecretsManagementSettings {
   @doc("Where to store certificates on the machine.")
   certificateStoreLocation?: string;
 
+  @doc("Name of the cert store to use on the machine, currently 'My' and 'Root' are supported.")
+  certifcateStoreName?: string;
+
   @doc("The list of certificates to install on all machines in the pool.")
   observedCertificates: url[];
 
